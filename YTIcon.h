@@ -44,6 +44,7 @@ typedef enum {
     YT_PREMIUM = 688,
     YT_DEFAULT_LOGO = 158, // Default Logo as seen in the Navigation Bar
     YT_PREMIUM_LOGO = 537, // Premium Logo as seen in the Navigation Bar
+    YT_PREMIERE_LOGO_SHORT = 537,
     YT_SCREEN_ROTATION = 701,
     YT_PREMIUM_STANDALONE = 741,
     YT_PIP = 801, // a.k.a YT_WALLPAPER

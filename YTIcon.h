@@ -1,3 +1,5 @@
+// YouTube 17.39.4 supports up to enum 1011
+
 typedef enum {
     YT_UNKNOWN = 0,
     YT_MY_CHANNEL = 1,
@@ -5,6 +7,7 @@ typedef enum {
     YT_SETTINGS = 44,
     YT_SHARE = 48,
     YT_DISLIKE = 51,
+    YT_UNSUBSCRIBE = 54,
     YT_PLAY_ALL = 84,
     YT_VERY_HAPPY = 89,
     YT_HAPPY = 90,
@@ -30,6 +33,7 @@ typedef enum {
     YT_MONEY_FILL = 321,
     YT_UPLOAD = 329,
     YT_PLAYLIST_PLAY = 333,
+    YT_MOVIES = 345,
     YT_IMAGE = 367,
     YT_DELETE_LIGHT = 382,
     YT_CLOSE_LIGHT = 386,
@@ -72,6 +76,7 @@ typedef enum {
     YT_FACE_HAPPY_OUTLINE = 981,
     YT_OUTLINE_ALERT_TRIANGLE = 982,
     YT_OUTLINE_OVERFLOW_VERTICAL = 983,
+    YT_CLAPPERBOARD = 1021,
     YT_OUTLINE_GIFT = 1026,
     YT_BRIGHTNESS = 1034,
     YT_BRIGHTNESS_FILLED = 1035,

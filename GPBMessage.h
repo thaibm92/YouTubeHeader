@@ -6,9 +6,12 @@
 + (instancetype)parseFromData:(NSData *)data;
 + (instancetype)parseFromData:(NSData *)data error:(NSError **)error;
 + (instancetype)deserializeFromString:(NSString *)str;
++ (GPBExtensionDescriptor *)descriptor;
 - (instancetype)messageForFieldNumber:(NSUInteger)fieldNumber;
 - (instancetype)messageForFieldNumber:(NSUInteger)fieldNumber messageClass:(Class)messageClass;
 - (id)firstSubmessage;
+- (id)getExtension:(GPBExtensionDescriptor *)extension;
+- (BOOL)hasExtension:(GPBExtensionDescriptor *)extension;
 - (void)clear;
 - (void)setExtension:(GPBExtensionDescriptor *)extension value:(id)value;
 - (void)mergeFrom:(GPBMessage *)other;

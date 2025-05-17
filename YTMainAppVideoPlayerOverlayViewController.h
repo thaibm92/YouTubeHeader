@@ -6,10 +6,12 @@
 
 @interface YTMainAppVideoPlayerOverlayViewController : UIViewController <YTResponder, YTAdjustableAccessibilityProtocol>
 @property (nonatomic, strong, readwrite) YTPlayerBarController *playerBarController;
+@property (nonatomic, weak, readwrite) id <YTVideoPlayerOverlayDelegate> delegate;
 - (YTMainAppVideoPlayerOverlayView *)videoPlayerOverlayView;
-- (id <YTVideoPlayerOverlayDelegate>)delegate;
 - (void)didPressVarispeed:(id)arg;
 - (void)didPressVideoQuality:(id)arg;
+- (void)setPlaybackRate:(CGFloat)rate;
 - (BOOL)isFullscreen;
 - (CGFloat)totalTime;
+- (CGFloat)currentPlaybackRate;
 @end
